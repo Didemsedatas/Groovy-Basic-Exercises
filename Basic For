@@ -1,0 +1,17 @@
+//find the total number of elements less than the previous number
+
+def numList = [3,6,2,7,9,11,8,6,13,12,11,9]
+
+kucuk_sayilar = 0
+first = numList[0]                    
+
+for (i=0; i < numList.size()-1; i++) {
+    
+    if (numList[i+1] < numList[i]) {
+        kucuk_sayilar++
+    }
+    
+}
+   
+   
+println(kucuk_sayilar)
